@@ -1,0 +1,191 @@
+body{
+    font-family:'Montserrat';
+    background: linear-gradient(90deg, #4203a9, #90bafc);
+}
+
+.tag {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 120px;
+}
+
+ .tag span {
+    color: #ffff76;
+}
+
+ .modal-body h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.input-box{
+    background: rgba(255,255,255,0.3);
+    margin-top: 70px ;
+    margin-bottom: 60px;
+}
+
+.input-box input{
+    flex: 1;
+    margin-right: 25px;
+    padding: 14px 20px !important;
+    outline: 0;
+    font-size: 20px;
+    position: relative;
+}
+
+.input-box button{
+   background: #ffff76;
+   outline: 0;
+   cursor: pointer;
+   padding: 12px 30px;
+   font-size: 18px;
+   border-radius: 5px;
+   font-weight: 600;
+   color: #333;
+}
+
+.modal-header, .modal-footer{
+    background:  #003366;
+    padding: 12px !important;
+    border: 2px solid #fff;
+}
+.modal-title{
+   font-size: 28px;
+   font-weight: 600;
+   color: #fff;
+}
+
+.rights{
+    font-weight: 20px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.modal-body{
+background: #000;
+border: 2px solid #fff;
+}
+
+.temp{
+    display: none;
+}
+
+.modal-body h2{
+   color: #fff;
+   font-size: 40px;
+
+}
+
+h2 span{
+    color: #f1f161;
+} 
+
+.modal-body h3{
+    color: red;
+    font-weight: 600;
+}
+.msg{
+    animation: kd 3s ease-out 0.3s infinite both ;
+}
+
+@keyframes kd {
+    0%{
+         transform: scale(0.2);
+    }
+
+    100%{
+        transform: scale(1);
+   }   
+}
+
+.detail h3 {
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.detail h3 span {
+    color: #f1f161;
+}
+
+.detail i {
+    color: red;
+}
+
+.detail .res i {
+    color: #4203a9;
+}
+
+.detail .res {
+    color:#90bafc;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+
+/*  */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .heart {
+    font-size: 6em;
+    position: relative;
+  }
+  
+  .heartbeat {
+    position: relative;
+    z-index: 1;
+    animation: beat 2s linear infinite;
+  }
+  
+  .heartecho {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: echo 2s linear infinite;
+  }
+  
+  @keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(0.9);
+    }
+    21% {
+      transform: scale(1.1) skew(0.004turn)
+    }
+    28% {
+      transform: scale(1) skew(0.008turn);
+    }
+    35% {
+      transform: scale(1) skew(0)
+    }
+  }
+  
+  @keyframes echo {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    14% {
+      opacity: 0.4;
+      transform: scale(0.8);
+    }
+    21% {
+      opacity: 0.4;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(3);
+    }
+  }
